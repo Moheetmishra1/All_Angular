@@ -1,0 +1,14 @@
+<form [formGroup]="form"  (ngSubmit)="onSubmit(btn)">
+
+    <app-control  title="Title" >
+      <input type="text" name="title" id="title" #inputName #input formControlName="title" >
+    </app-control>
+
+    <app-control title="Request"  >
+      <textarea type="text" id="request" name="request"  rows="3" #input formControlName="request"  ></textarea>
+    </app-control>
+
+    <button appButton  #btn  >
+          Submit
+    </button>
+</form>
